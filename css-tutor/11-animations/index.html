@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: center; */
+            height: 100vh;
+        }
+
+        /* Css Transition start */
+        /*.box {
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            /* transition-property: background-color, width;
+            transition-duration: 5s; */
+        /* transition-timing-function: ease-in; ease-intransition-timing-function: ease-out;ease-intransition-timing-function: ease-in-out;*/
+        /* transition: background-color 2s, width 5s ease-in; */
+        /* transition: all 2s ease-in ; */
+
+
+        /* .box:hover{
+            background-color: chocolate;
+            width: 600px;
+        } */
+
+        /* Css Transition end */
+
+        /* Css Transform start*/
+        /* transform: rotate(45deg); */
+        /* border-top-left-radius: 40px; */
+        /*transition: 2s transform ease-in; }*/
+
+
+        /*.box:hover {
+               /* transform: rotate(45deg); */
+        /*transform: translate(100px); */
+        /* transform: translateY(-100px); */
+        /*transform: scale(2); } */
+        /* Css Transform end */
+
+        /* Css Animation */
+        /*.box {
+            width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            animation-name: box;
+            animation-duration: 2s;
+            /* animation-duration: 2s;
+            animation-duration-count: 4; */
+        /* animation-fill-mode: forwards; */
+        /* animation-delay: 2s; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-timing-function: ease-in; */
+        /* animation: box 5s forwards 2s ease-in-out; 
+        }
+
+        @keyframes box{
+            to{
+                width: 600px;
+            }
+        }* /
+
+        /* Css Animation end */
+
+        /* Css Keyframes  start*/
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: box 5s ease-in;
+        }
+
+        @keyframes box {
+
+            /* from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                width: 600px;
+                top: 200px;
+                left: 200px;
+            } */
+            25% {
+                top: 200px;
+                left: 0;
+            }
+
+            50% {
+                top: 200px;
+                left: 200px;
+            }
+
+            75% {
+                top: 400px;
+                left: 200px;
+            }
+
+            100% {
+                top: 400px;
+                left: 400px;
+            }
+
+            button {
+                opacity: 0;
+                animation: button 2s ease-in;
+                position: absolute;
+                top: 0;
+                left: o;
+            }
+        }
+
+        @keyframes button {
+            to{
+                top: 100px;
+                left: 100px;
+                opacity: 1;
+            }
+        }
+
+        /* Css Keyframes end */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <button>Tıkla</button>
+    </div>
+</body>
+
+</html>
