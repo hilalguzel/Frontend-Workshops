@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Rem and Em</title>
+    <style>
+        html{
+            font-size: 62.5%
+        }
+
+        .box-wrapper{
+            font-size: 30px;
+        }
+
+        .box{
+            font-size: 20;
+        }
+        .box p{
+            font-size: 1.5em;
+            margin-top: 2em;
+        }
+
+        .box span{
+            font-size: 2rem;
+            margin-top: 2rem;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px){
+            html{
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px){
+            html{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos incidunt eum non dignissimos aperiam dicta illum necessitatibus, perspiciatis vitae aliquam ducimus cumque doloribus ab laborum, adipisci qui in numquam.</p>
+            <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident voluptatem natus ipsum odit eos expedita animi aliquid cupiditate repellat sapiente ab iste, aut aliquam nulla? Consequuntur sunt architecto aspernatur.
+            </span>
+            <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident voluptatem natus ipsum odit eos expedita animi aliquid cupiditate repellat sapiente ab iste, aut aliquam nulla? Consequuntur sunt architecto aspernatur.
+            </span>
+            <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident voluptatem natus ipsum odit eos expedita animi aliquid cupiditate repellat sapiente ab iste, aut aliquam nulla? Consequuntur sunt architecto aspernatur.
+            </span>
+            <span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident voluptatem natus ipsum odit eos expedita animi aliquid cupiditate repellat sapiente ab iste, aut aliquam nulla? Consequuntur sunt architecto aspernatur.
+            </span>
+        </div>
+    </div>
+</body>
+</html>
