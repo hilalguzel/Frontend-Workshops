@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container *{
+            border: 1px solid red; /*Tarayıcıyı yorar*/
+        }
+        ul li a{
+            text-decoration: none;
+            color: greenyellow;
+        }
+
+        ul {
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        ul + p {
+            color: purple;
+        }
+
+        ul ~ p {
+            color: purple;
+        }
+
+        .direkt-secici > p {
+            color:chocolate
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">List1</a>
+        </li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vel et maxime repudiandae praesentium quibusdam quaerat corporis nemo temporibus earum unde ab libero commodi ducimus incidunt vitae ipsa. Aliquam, architecto?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident saepe veniam dolorem deserunt eveniet odit asperiores facilis! Ea quidem, illum quasi dolores tempora libero facere deleniti atque enim. Deserunt, architecto.</p>
+    <div class="container" id="container">
+        <p>Lorem ipsum dolor sit amet.
+            <span>Lorem ipsum dolor sit.</span>
+        </p>
+        <p>Lorem ipsum dolor sit amet.
+            <i>Lorem ipsum dolor sit.</i>
+        </p>
+        <p>Lorem ipsum dolor sit amet.
+            <strong>Lorem ipsum dolor sit.</strong>
+        </p>
+    </div>
+    <div class="container" id="container2">
+        <h4>Direkt Seçici</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="direkt-secici">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+
+</body>
+</html>
