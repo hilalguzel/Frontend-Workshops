@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Pseudo</title>
+    <style>
+        .links a:link{
+            color: chocolate;
+        }
+        .links a:visited{
+            color: green;
+        }
+
+        .links a:hover{
+            color:cornflowerblue
+        }
+        .links a:active{
+            color: crimson;
+        }
+
+        .show-button button{
+            display: none;
+        }
+        .show-button:hover{
+            color: darkcyan;
+        }
+        .show-button:hover button{
+            display: inline-block;
+        }
+
+        .pseudo p:first-child{
+            color: red;
+        }
+        .pseudo p:last-child{
+            color: blue;
+        }
+
+        .pseudo p:last-child::first-letter{
+            color: aquamarine;
+            font-size: 50px;
+        }
+
+        .pseudo p::first-line{
+            background-color: chartreuse;
+        }
+
+        .pseudo p:last-child::after{
+            content: "***";
+        }
+
+        .pseudo ::selection{
+            color: brown;
+            background-color: darkgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo Classes-->
+
+    <!-- <div class="links">
+        <a href="home.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="cantact.html">Contact</a>
+    </div> -->
+
+    <!-- <div class="show-button">
+        Show button....
+        <br>
+        <button>Click</button>
+    </div> -->
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti expedita esse unde nihil laboriosam illum repellendus! Aut enim saepe impedit reiciendis recusandae soluta praesentium rem amet accusantium, error, nam distinctio.</p>
+
+    <div class="pseudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint exercitationem perspiciatis cumque autem officiis doloremque, omnis obcaecati excepturi expedita necessitatibus! Odit, atque deleniti! Saepe omnis esse ullam maxime illo expedita?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum aut libero ad quibusdam corrupti neque, temporibus, corporis necessitatibus ratione fuga tenetur iusto, laborum ea ipsum adipisci modi? Reprehenderit, consequatur!.</p>
+    </div>
+</body>
+</html>
