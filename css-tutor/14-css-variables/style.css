@@ -1,0 +1,61 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --bg-color: green;
+    --base-font-family: 'Poppins', sans-serif;
+    --secondary-font-family: "Seymour One", sans-serif;
+    --border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornflowerblue;
+    font-family: var(--base-font-family);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: var(--secondary-font-family);
+}
+
+nav ul a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--secondary-font-family);
+}
+
+section{
+    margin: 10px 20px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+section button{
+    color: aliceblue;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: var(--border-radius);
+    font-family: var(--secondary-font-family);
+
+}
